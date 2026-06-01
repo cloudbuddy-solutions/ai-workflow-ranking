@@ -78,7 +78,7 @@ Use this structure and visual direction:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Workflow Ranking - [company or user]</title>
+  <title>Workflow Prioritization - [company or user]</title>
   <style>
     @font-face {
       font-family: "Plus Jakarta Sans Variable";
@@ -470,9 +470,9 @@ Use this structure and visual direction:
       <div>
         <div class="brand">
           <img src="[logo data URI or assets/cloudbuddy-logo.png]" alt="CloudBuddy">
-          <span>CloudBuddy Workflow Ranking</span>
+          <span>CLOUDBUDDY WORKFLOW RANKING</span>
         </div>
-        <h1>Workflow Ranking</h1>
+        <h1>Workflow Prioritization</h1>
         <p class="lede">A build-first ranking of recurring workflows for [company or user].</p>
       </div>
       <aside class="summary">

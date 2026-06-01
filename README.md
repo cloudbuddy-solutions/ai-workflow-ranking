@@ -22,8 +22,6 @@ Built by [CloudBuddy Solutions](https://cloudbuddyapps.com), the team behind Clo
 
 This example uses a fictional service business walkthrough. The generated report is static HTML: no scripts, no tracking, no external calls.
 
-![Sample AI Workflow Ranking report](assets/sample-output.png)
-
 See the full sample report at [cloudbuddyapps.com/github/workflow-ranking-sample-report.html](https://cloudbuddyapps.com/github/workflow-ranking-sample-report.html), or view the local copy at [`examples/sample-report.html`](examples/sample-report.html).
 
 ## What this is made of
