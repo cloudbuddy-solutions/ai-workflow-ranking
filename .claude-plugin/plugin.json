@@ -1,0 +1,12 @@
+{
+  "name": "ai-workflow-ranking",
+  "description": "AI Workflow Ranking: rank your recurring workflows and decide which one to automate with AI first. A guided diagnostic that scores each workflow on readiness and opportunity and outputs a ranked build-first plan plus a static HTML report.",
+  "version": "0.1.0",
+  "author": {
+    "name": "CloudBuddy Solutions",
+    "url": "https://cloudbuddyapps.com"
+  },
+  "homepage": "https://cloudbuddyapps.com/blog/ai-workflow-ranking/",
+  "license": "CC-BY-4.0",
+  "keywords": ["ai", "agents", "automation", "workflow", "ranking", "skill"]
+}

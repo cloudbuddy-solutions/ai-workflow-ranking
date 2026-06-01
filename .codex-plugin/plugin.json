@@ -1,0 +1,29 @@
+{
+  "name": "ai-workflow-ranking",
+  "version": "0.1.0",
+  "description": "Rank recurring workflows and decide which one to automate with AI first. Produces a ranked build-first plan, readiness gates, a connected system sketch, and a static HTML report.",
+  "author": {
+    "name": "CloudBuddy Solutions",
+    "url": "https://cloudbuddyapps.com"
+  },
+  "homepage": "https://cloudbuddyapps.com/blog/ai-workflow-ranking/",
+  "repository": "https://github.com/cloudbuddy-solutions/ai-workflow-ranking",
+  "license": "CC-BY-4.0",
+  "keywords": ["ai", "agents", "automation", "workflow", "ranking", "skill"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI Workflow Ranking",
+    "shortDescription": "Decide which workflow to automate first",
+    "longDescription": "A guided diagnostic for ranking recurring workflows, identifying readiness gaps, choosing the best first AI automation proof, and packaging the result as a clean static HTML report.",
+    "developerName": "CloudBuddy Solutions",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Read"],
+    "websiteURL": "https://cloudbuddyapps.com/blog/ai-workflow-ranking/",
+    "defaultPrompt": [
+      "Use AI Workflow Ranking to pick my first automation workflow."
+    ],
+    "brandColor": "#087A3A",
+    "logo": "./assets/sample-output.png",
+    "screenshots": ["./assets/sample-output.png"]
+  }
+}

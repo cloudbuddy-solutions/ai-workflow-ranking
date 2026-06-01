@@ -1,0 +1,8 @@
+interface:
+  display_name: "AI Workflow Ranking"
+  short_description: "Choose the first workflow to automate"
+  brand_color: "#087A3A"
+  default_prompt: "Use $ai-workflow-ranking to help me decide which workflow to automate first."
+
+policy:
+  allow_implicit_invocation: true
