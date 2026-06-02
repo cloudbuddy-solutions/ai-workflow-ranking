@@ -30,6 +30,10 @@ Recommended sequence
 2. [workflow] - [why this follows]
 3. [workflow or foundation step] - [why this waits]
 
+Assumptions and estimates
+- [workflow or business proxy]: [estimated input used, why it is reasonable, and confidence: low / medium / high]
+- If no estimates were used, write: None. User supplied enough direct evidence.
+
 System sketch
 Intake -> Understanding -> Decisions -> Self-running
 Today, most of your work sits at: [stage]
@@ -66,6 +70,7 @@ Rules:
 - Keep the HTML printable and useful as a leave-behind.
 - Escape user-provided text before putting it into HTML.
 - Use the same scores, gates, theses, recommendation, and open questions as the plain artifact.
+- Include the same assumptions and estimates as the plain artifact. If none were used, write that no estimates were needed.
 - Add the `active` class to the system-sketch stages that describe where the workflow is today and where the first build moves it.
 - Keep the ranked table inside `.table-frame`, use the provided `colgroup`, and include `data-label` on every `td` so the table becomes readable cards on mobile.
 - For score cells, use `class="score score-1"` through `score-5` and wrap the visible score in `<span class="score-value">x/5</span>`. Use `score-empty` for unscored human-judgment rows.
@@ -566,6 +571,13 @@ Use this structure and visual direction:
         <p><strong>Before anything writes to a real system:</strong> [controls needed]</p>
         <p><strong>Baseline to capture first:</strong> [metric]</p>
       </div>
+    </section>
+
+    <section>
+      <h2>Assumptions And Estimates</h2>
+      <ul>
+        <li><strong>[workflow or business proxy]:</strong> [estimated input used, why it is reasonable, and confidence]</li>
+      </ul>
     </section>
 
     <section>

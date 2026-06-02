@@ -46,7 +46,7 @@ codex plugin marketplace add cloudbuddy-solutions/ai-workflow-ranking
 Then open Codex, install `ai-workflow-ranking` from the `cloudbuddy` marketplace, start a new thread, and say:
 
 ```
-Use the AI Workflow Ranking skill to help me decide which workflow in my business to automate first.
+Use the AI Workflow Ranking skill to help me decide which workflow in my business to automate first. If exact numbers are missing, estimate from rough headcount, revenue, customers, or other proxies.
 ```
 
 To remove it from Codex:
@@ -54,6 +54,14 @@ To remove it from Codex:
 ```
 codex plugin marketplace remove cloudbuddy
 ```
+
+To update it in Codex:
+
+```
+codex plugin marketplace upgrade cloudbuddy
+```
+
+Then restart Codex or reload the plugin list if the app asks you to.
 
 ### Claude Code
 
@@ -65,7 +73,7 @@ codex plugin marketplace remove cloudbuddy
 Then start a session and say:
 
 ```
-Use the AI Workflow Ranking skill to help me decide which workflow in my business to automate first.
+Use the AI Workflow Ranking skill to help me decide which workflow in my business to automate first. If exact numbers are missing, estimate from rough headcount, revenue, customers, or other proxies.
 ```
 
 To uninstall it from Claude Code:
@@ -79,6 +87,20 @@ If you installed it locally for one project, run:
 ```
 /plugin uninstall --scope local ai-workflow-ranking@cloudbuddy
 ```
+
+To update it in Claude Code, run either command:
+
+```
+/plugin update ai-workflow-ranking@cloudbuddy
+```
+
+or from a shell:
+
+```
+claude plugin update ai-workflow-ranking@cloudbuddy
+```
+
+Restart Claude Code after updating so the new skill text is loaded.
 
 ### Claude (web or desktop app)
 
@@ -98,9 +120,10 @@ Any assistant or harness that supports markdown skills or custom instructions ca
 ## How to use it
 
 1. Have a rough list of your recurring workflows handy (invoice intake, quote approval, lead triage, reporting, onboarding, compliance checks, customer replies). You can also build the list with the skill one workflow at a time.
-2. Run the prompt above.
-3. Answer one question at a time. Ground your answers in real numbers where you can.
-4. You will end with a ranked table, a recommended first build, the open questions to resolve before building, and a static HTML report when your assistant can create files.
+2. If you do not have exact workflow numbers, bring rough scale instead: headcount, revenue, customer count, and any proxy volumes such as monthly leads, invoices, tickets, jobs, orders, quotes, campaigns, or locations.
+3. Run the prompt above.
+4. Answer one question at a time. Ground your answers in real numbers where you can, or say `estimate` for individual details you do not have.
+5. You will end with a ranked table, a recommended first build, the open questions to resolve before building, and a static HTML report when your assistant can create files.
 
 ## Want it run with you?
 
