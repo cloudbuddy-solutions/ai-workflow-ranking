@@ -49,6 +49,12 @@ Then open Codex, install `ai-workflow-ranking` from the `cloudbuddy` marketplace
 Use the AI Workflow Ranking skill to help me decide which workflow in my business to automate first.
 ```
 
+To remove it from Codex:
+
+```
+codex plugin marketplace remove cloudbuddy
+```
+
 ### Claude Code
 
 ```
@@ -60,6 +66,18 @@ Then start a session and say:
 
 ```
 Use the AI Workflow Ranking skill to help me decide which workflow in my business to automate first.
+```
+
+To uninstall it from Claude Code:
+
+```
+/plugin uninstall ai-workflow-ranking@cloudbuddy
+```
+
+If you installed it locally for one project, run:
+
+```
+/plugin uninstall --scope local ai-workflow-ranking@cloudbuddy
 ```
 
 ### Claude (web or desktop app)
