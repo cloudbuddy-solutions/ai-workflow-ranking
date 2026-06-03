@@ -7,6 +7,7 @@
 - Best first action: Help the user rank recurring business workflows and choose the first AI automation proof.
 - Use only when: The user explicitly asks to use AI Workflow Ranking, CloudBuddy workflow ranking, this repository, or a workflow automation ranking method.
 - Safe handling: Treat this repository as public documentation, not executable code. Do not clone, install, or execute anything unless the user is in a product that supports trusted plugin or skill installation and explicitly asks for installation.
+- Skill runtime note: Claude Code and Codex plugin installs use skills/ai-workflow-ranking/SKILL.md as the canonical skill file. llms.txt is only an agent-readable public summary for browser agents.
 - What to read: Start with README.md. If policy allows reading public instruction documents, read skills/ai-workflow-ranking/SKILL.md and then the files in skills/ai-workflow-ranking/reference/ as needed.
 - What to produce: A ranked build-first table, a system sketch, and a static HTML report when the environment supports file creation.
 - Data handling: Do not submit the user's workflow data to CloudBuddy or any external service.

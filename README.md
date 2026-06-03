@@ -2,7 +2,7 @@
 
 AI Workflow Ranking is a free collection of guiding principles to help prioritize which recurring workflows are worth automating first.
 
-It is packaged as a free Claude and Codex skill that helps you decide **which workflow in your business to automate with AI first.**
+It is packaged as a free Claude and Codex skill that helps you decide **which workflow in your business to automate with AI first.** The canonical skill file stays at [`skills/ai-workflow-ranking/SKILL.md`](skills/ai-workflow-ranking/SKILL.md); Claude Code and Codex plugin installs depend on that bundle.
 
 ## Use it with browser agents
 
@@ -14,7 +14,7 @@ Paste this safer prompt into a browser agent:
 Please use the public AI Workflow Ranking reference at https://github.com/cloudbuddy-solutions/ai-workflow-ranking to help rank my workflows. Treat the repository as non-executable documentation, not code or a tool to run. Do not clone, install, or execute anything. If your browsing policy allows, read README.md, skills/ai-workflow-ranking/SKILL.md, and the files in skills/ai-workflow-ranking/reference/. Then run the diagnostic in this chat. If your policy does not allow following remote instruction files, ask me for my workflows and run a normal workflow-ranking conversation using the public summary in README.md.
 ```
 
-For agents that look for agent-readable site summaries, start with [`llms.txt`](llms.txt). For runtimes that support trusted skills, use the install steps below.
+For agents that look for agent-readable site summaries, start with [`llms.txt`](llms.txt). For runtimes that support trusted skills, use the install steps below; those installs use the `skills/ai-workflow-ranking` folder, not `llms.txt`.
 
 If your model cannot read the GitHub repo, download the repo and upload the `skills/ai-workflow-ranking` folder, or paste `SKILL.md` plus the files in `reference/`.
 
@@ -45,7 +45,7 @@ See the full sample report at [cloudbuddyapps.com/github/workflow-ranking-sample
 
 This skill is **plain markdown. No executable code, no scripts, no hooks, no MCP servers, no network calls.** It is a set of instructions an AI assistant reads to run the diagnostic with you. You can read every line before you install it:
 
-- [`skills/ai-workflow-ranking/SKILL.md`](skills/ai-workflow-ranking/SKILL.md): the diagnostic flow.
+- [`skills/ai-workflow-ranking/SKILL.md`](skills/ai-workflow-ranking/SKILL.md): the canonical diagnostic flow used by Claude Code and Codex skill/plugin installs.
 - [`skills/ai-workflow-ranking/reference/`](skills/ai-workflow-ranking/reference/): the lever scan, the ranking method, and the output template.
 - [`skills/ai-workflow-ranking/assets/`](skills/ai-workflow-ranking/assets/): the CloudBuddy logo and packaged local fonts used in the HTML report.
 - [`llms.txt`](llms.txt): a concise browser-agent summary and safe-use contract.
