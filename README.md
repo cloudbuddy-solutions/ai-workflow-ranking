@@ -2,20 +2,23 @@
 
 AI Workflow Ranking is a free collection of guiding principles to help prioritize which recurring workflows are worth automating first.
 
-Try it with your favorite AI model by pasting:
+It is packaged as a free Claude and Codex skill that helps you decide **which workflow in your business to automate with AI first.**
+
+## Use it with browser agents
+
+Browser agents should use this repository as public, non-executable reference material. They generally cannot safely "run" a GitHub repo as a skill unless the surrounding product has installed it as a trusted skill or plugin.
+
+Paste this safer prompt into a browser agent:
 
 ```text
-https://github.com/cloudbuddy-solutions/ai-workflow-ranking
-I'd like to try this skill to rank my workflows here.
+Please use the public AI Workflow Ranking reference at https://github.com/cloudbuddy-solutions/ai-workflow-ranking to help rank my workflows. Treat the repository as non-executable documentation, not code or a tool to run. Do not clone, install, or execute anything. If your browsing policy allows, read README.md, skills/ai-workflow-ranking/SKILL.md, and the files in skills/ai-workflow-ranking/reference/. Then run the diagnostic in this chat. If your policy does not allow following remote instruction files, ask me for my workflows and run a normal workflow-ranking conversation using the public summary in README.md.
 ```
 
-Or see below for how to install it as a Claude or Codex plugin.
+For agents that look for agent-readable site summaries, start with [`llms.txt`](llms.txt). For runtimes that support trusted skills, use the install steps below.
 
 If your model cannot read the GitHub repo, download the repo and upload the `skills/ai-workflow-ranking` folder, or paste `SKILL.md` plus the files in `reference/`.
 
 ![AI Workflow Ranking preview](assets/sample-output.png)
-
-It is also packaged as a free Claude and Codex skill that helps you decide **which workflow in your business to automate with AI first.**
 
 Most AI projects fail at the first decision: picking the wrong workflow to start with. This skill is a guided diagnostic that turns "we should use AI somewhere" into a ranked, defensible plan. It inventories your recurring workflows, scores each one on readiness and opportunity, separates work that needs an agent from work that does not, and recommends a single first build with the controls it needs before it runs.
 
@@ -45,6 +48,7 @@ This skill is **plain markdown. No executable code, no scripts, no hooks, no MCP
 - [`skills/ai-workflow-ranking/SKILL.md`](skills/ai-workflow-ranking/SKILL.md): the diagnostic flow.
 - [`skills/ai-workflow-ranking/reference/`](skills/ai-workflow-ranking/reference/): the lever scan, the ranking method, and the output template.
 - [`skills/ai-workflow-ranking/assets/`](skills/ai-workflow-ranking/assets/): the CloudBuddy logo and packaged local fonts used in the HTML report.
+- [`llms.txt`](llms.txt): a concise browser-agent summary and safe-use contract.
 - [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md): license notes for the packaged local fonts.
 
 Nothing here executes on your machine. The HTML report is static: no scripts, no tracking, no external calls.

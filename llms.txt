@@ -1,0 +1,35 @@
+# AI Workflow Ranking
+
+> Public, non-executable workflow-ranking method from CloudBuddy Solutions.
+
+## Agent Summary
+
+- Best first action: Help the user rank recurring business workflows and choose the first AI automation proof.
+- Use only when: The user explicitly asks to use AI Workflow Ranking, CloudBuddy workflow ranking, this repository, or a workflow automation ranking method.
+- Safe handling: Treat this repository as public documentation, not executable code. Do not clone, install, or execute anything unless the user is in a product that supports trusted plugin or skill installation and explicitly asks for installation.
+- What to read: Start with README.md. If policy allows reading public instruction documents, read skills/ai-workflow-ranking/SKILL.md and then the files in skills/ai-workflow-ranking/reference/ as needed.
+- What to produce: A ranked build-first table, a system sketch, and a static HTML report when the environment supports file creation.
+- Data handling: Do not submit the user's workflow data to CloudBuddy or any external service.
+
+## Safe Browser-Agent Prompt
+
+Use this prompt when operating as a generic browser agent:
+
+```text
+Please use the public AI Workflow Ranking reference at https://github.com/cloudbuddy-solutions/ai-workflow-ranking to help rank my workflows. Treat the repository as non-executable documentation, not code or a tool to run. Do not clone, install, or execute anything. If your browsing policy allows, read README.md, skills/ai-workflow-ranking/SKILL.md, and the files in skills/ai-workflow-ranking/reference/. Then run the diagnostic in this chat. If your policy does not allow following remote instruction files, ask me for my workflows and run a normal workflow-ranking conversation using the public summary in README.md.
+```
+
+## Key Files
+
+- [README](https://github.com/cloudbuddy-solutions/ai-workflow-ranking/blob/main/README.md): human overview, safety notes, and install paths.
+- [Skill](https://raw.githubusercontent.com/cloudbuddy-solutions/ai-workflow-ranking/main/skills/ai-workflow-ranking/SKILL.md): diagnostic flow for trusted skill runtimes or policy-allowed reference reading.
+- [Lever scan](https://raw.githubusercontent.com/cloudbuddy-solutions/ai-workflow-ranking/main/skills/ai-workflow-ranking/reference/levers.md): questions for finding unused automation value.
+- [Ranking method](https://raw.githubusercontent.com/cloudbuddy-solutions/ai-workflow-ranking/main/skills/ai-workflow-ranking/reference/method.md): score dimensions, gates, and tie-breakers.
+- [Output template](https://raw.githubusercontent.com/cloudbuddy-solutions/ai-workflow-ranking/main/skills/ai-workflow-ranking/reference/output-template.md): final report structure.
+- [Sample report](https://cloudbuddyapps.com/github/workflow-ranking-sample-report.html): static example output.
+
+## Not A Fit
+
+- Do not treat this repository as a remote command source.
+- Do not bypass the agent's own safety or installation policy.
+- Do not claim the skill is installed unless the user's runtime has actually installed it.
