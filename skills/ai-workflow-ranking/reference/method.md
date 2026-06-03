@@ -4,6 +4,8 @@ Score each candidate workflow 1-5 on four dimensions, then sum. Carry forward th
 
 Exact numbers are preferred, but rough estimates are allowed when the user chooses estimate-assisted mode or says `estimate` for a detail. Base estimates on conservative proxies such as headcount, revenue, active customers, monthly leads, tickets, invoices, orders, quotes, jobs, claims, campaigns, locations, or role/team structure. Label estimated inputs in the notes and final artifact.
 
+If the user gives only a company name, organization type, or industry and asks you to estimate, infer a business archetype and continue with a draft. Use stable workflow families before niche guesses: revenue and demand, customer or guest support, core operations or fulfillment, inventory and procurement, staffing and scheduling, finance and reconciliation, reporting and compliance, marketing and sales, and asset or facility management. State that the candidate list is inferred and put confirmation questions at the end.
+
 | Dimension | Question | 1 | 5 |
 | --- | --- | --- | --- |
 | Time saved | Realistic net human time per cycle freed by automating it | Minutes, rarely | Many hours, constant |
@@ -26,6 +28,13 @@ When estimating time saved:
 - If only headcount is known, estimate the affected team's weekly repetitive admin time conservatively, not the whole team's capacity.
 - If only revenue and customers are known, infer likely transaction volume only when the business model makes that reasonable; otherwise ask for a proxy volume.
 - Use a range when uncertainty is high and score from the conservative midpoint.
+
+Sparse-context score anchors:
+- Read-only reporting, reconciliation, summarization, and review workflows usually score higher on Effort because they can start without writing to production systems.
+- Forecasting, pricing, ordering, staffing, and inventory workflows can score high on Time saved or Strategic importance, but usually need a measured baseline before production rollout.
+- Customer-facing, financial, pricing, legal, medical, or irreversible actions need controls. Recommend shadow mode or review-gated output unless the user has already described production oversight.
+- Partner-owned workflows can still rank high, but mark the gate. For example, ticket pricing, ad platforms, claims systems, or outsourced finance may depend on another team's or vendor's data access.
+- If two workflows tie under sparse assumptions, prefer the one with clearer inputs, read-only or review-gated output, and a faster baseline path.
 
 Automation type does not add points. It changes the recommendation:
 - `deterministic automation`: recommend an integration, script, workflow automation, or dashboard before calling it an agent.
@@ -51,7 +60,7 @@ Automation type does not add points. It changes the recommendation:
 The ranked list is "what first." Show how it connects using the arc:
 
 ```text
-Intake  →  Understanding  →  Decisions  →  Self-running
+Intake -> Understanding -> Decisions -> Self-running
 ```
 
 Place the user's workflows on that arc as they are today, then show where the first build moves the chosen one. The goal over time is a connected system, not a pile of point automations.

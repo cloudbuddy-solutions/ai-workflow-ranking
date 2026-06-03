@@ -20,7 +20,7 @@
     "capabilities": ["Interactive", "Read"],
     "websiteURL": "https://cloudbuddyapps.com/blog/ai-workflow-ranking/",
     "defaultPrompt": [
-      "Use AI Workflow Ranking to pick my first automation workflow."
+      "Use AI Workflow Ranking to pick my first automation workflow. If I only give a company name or business type, infer a draft workflow set, inputs, outputs, and assumptions, then rank it without stopping for more detail."
     ],
     "brandColor": "#087A3A",
     "logo": "./assets/sample-output.png",

@@ -1,12 +1,25 @@
 # AI Workflow Ranking
 
+AI Workflow Ranking is a free collection of guiding principles to help prioritize which recurring workflows are worth automating first.
+
+Try it with your favorite AI model by pasting:
+
+```text
+https://github.com/cloudbuddy-solutions/ai-workflow-ranking
+I'd like to try this skill to rank my workflows here.
+```
+
+Or see below for how to install it as a Claude or Codex plugin.
+
+If your model cannot read the GitHub repo, download the repo and upload the `skills/ai-workflow-ranking` folder, or paste `SKILL.md` plus the files in `reference/`.
+
 ![AI Workflow Ranking preview](assets/sample-output.png)
 
-A free Claude and Codex skill that helps you decide **which workflow in your business to automate with AI first.**
+It is also packaged as a free Claude and Codex skill that helps you decide **which workflow in your business to automate with AI first.**
 
 Most AI projects fail at the first decision: picking the wrong workflow to start with. This skill is a guided diagnostic that turns "we should use AI somewhere" into a ranked, defensible plan. It inventories your recurring workflows, scores each one on readiness and opportunity, separates work that needs an agent from work that does not, and recommends a single first build with the controls it needs before it runs.
 
-The output is a ranked table and a one-page plan. Not an open-ended chat.
+The output is a ranked table and a one-page plan. Not an open-ended chat. If you only give it a company name or business type, it will infer a draft workflow set, estimate the likely inputs and outputs, and label the assumptions.
 
 Built by [CloudBuddy Solutions](https://cloudbuddyapps.com), the team behind CloudBuddy. Read the companion write-up: [AI Workflow Ranking](https://cloudbuddyapps.com/blog/ai-workflow-ranking/).
 
@@ -15,6 +28,7 @@ Built by [CloudBuddy Solutions](https://cloudbuddyapps.com), the team behind Clo
 - A ranked build-first list of your workflows, with an automation type for each (deterministic automation, agent, or human-judgment-stays).
 - A recommended first build, and an honest note when the highest-value workflow is not the best one to build first.
 - A readiness gate that tells you when the right first move is to measure or fix data before building anything.
+- Estimated workflow units, including likely triggers, inputs, decisions, and outputs when you start from sparse company context.
 - A simple system sketch of how your work moves from intake to understanding to decisions to self-running.
 - A static HTML report with the CloudBuddy logo, a clean ranking table, the recommendation, and open questions.
 
@@ -46,7 +60,7 @@ codex plugin marketplace add cloudbuddy-solutions/ai-workflow-ranking
 Then open Codex, install `ai-workflow-ranking` from the `cloudbuddy` marketplace, start a new thread, and say:
 
 ```
-Use the AI Workflow Ranking skill to help me decide which workflow in my business to automate first. If exact numbers are missing, estimate from rough headcount, revenue, customers, or other proxies.
+Use the AI Workflow Ranking skill to help me decide which workflow in my business to automate first. If exact numbers are missing, estimate from rough headcount, revenue, customers, or other proxies. If I only give a company name or business type, infer the likely workflow set, inputs, outputs, and assumptions, then rank a draft without stopping for more detail.
 ```
 
 To remove it from Codex:
@@ -73,7 +87,7 @@ Then restart Codex or reload the plugin list if the app asks you to.
 Then start a session and say:
 
 ```
-Use the AI Workflow Ranking skill to help me decide which workflow in my business to automate first. If exact numbers are missing, estimate from rough headcount, revenue, customers, or other proxies.
+Use the AI Workflow Ranking skill to help me decide which workflow in my business to automate first. If exact numbers are missing, estimate from rough headcount, revenue, customers, or other proxies. If I only give a company name or business type, infer the likely workflow set, inputs, outputs, and assumptions, then rank a draft without stopping for more detail.
 ```
 
 To uninstall it from Claude Code:

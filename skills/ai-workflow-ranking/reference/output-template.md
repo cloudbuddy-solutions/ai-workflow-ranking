@@ -22,6 +22,11 @@ Why each one (automation thesis)
 - [workflow]: A [type] could [X] because [lever Y] is missing.
 - [workflow]: A [type] could [X] because [lever Y] is missing.
 
+Estimated workflow units
+- [workflow]: trigger=[estimated or user-supplied trigger]; inputs=[inputs]; decision/review=[decision or review]; outputs=[outputs].
+- [workflow]: trigger=[estimated or user-supplied trigger]; inputs=[inputs]; decision/review=[decision or review]; outputs=[outputs].
+- If the user supplied exact units of work, write: Units supplied by user. No inferred units needed.
+
 Rank note
 #1 is the highest overall value by the formula. Recommended first build is the best first proof.
 
@@ -70,6 +75,7 @@ Rules:
 - Keep the HTML printable and useful as a leave-behind.
 - Escape user-provided text before putting it into HTML.
 - Use the same scores, gates, theses, recommendation, and open questions as the plain artifact.
+- Include the same workflow units, inputs, decisions, and outputs as the plain artifact when the assistant inferred or collected them.
 - Include the same assumptions and estimates as the plain artifact. If none were used, write that no estimates were needed.
 - Add the `active` class to the system-sketch stages that describe where the workflow is today and where the first build moves it.
 - Keep the ranked table inside `.table-frame`, use the provided `colgroup`, and include `data-label` on every `td` so the table becomes readable cards on mobile.
@@ -550,6 +556,14 @@ Use this structure and visual direction:
           <li>[workflow or foundation step] - [why this waits]</li>
         </ol>
       </div>
+    </section>
+
+    <section>
+      <h2>Workflow Units</h2>
+      <ul>
+        <li><strong>[workflow]:</strong> trigger=[estimated or user-supplied trigger]; inputs=[inputs]; decision/review=[decision or review]; outputs=[outputs].</li>
+        <li><strong>[workflow]:</strong> trigger=[estimated or user-supplied trigger]; inputs=[inputs]; decision/review=[decision or review]; outputs=[outputs].</li>
+      </ul>
     </section>
 
     <section>

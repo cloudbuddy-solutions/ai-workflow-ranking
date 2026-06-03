@@ -37,13 +37,25 @@ When asking for information later, include the same escape hatch in one short ph
 
 When estimating, label the assumption, keep it conservative, and carry it into the final artifact. Treat estimates as enough to rank and choose a proof, but do not present them as measured baselines unless the user says the business actually tracks them.
 
+### Sparse company mode
+Use sparse company mode when the user gives only a company name, organization type, industry, website, or short phrase and asks you to estimate, infer, or rank anyway. Do not stall for a full intake. Produce a draft ranking from labeled assumptions, then put the biggest unknowns in open questions.
+
+In sparse company mode:
+1. State the inferred business archetype in one line, such as "B2B SaaS company," "professional services firm," "multi-location operator," or "local service business." If you did not verify the organization with a live source, say the archetype is inferred, not researched.
+2. Build the candidate list from stable operating families before adding niche ideas: revenue and demand, customer or guest support, core operations or fulfillment, inventory and procurement, staffing and scheduling, finance and reconciliation, reporting and compliance, marketing and sales, and asset or facility management.
+3. Aim for 6-8 workflows. Prefer broad, recognizable workflows over hyper-specific guesses unless the user gave a role, department, or known operating focus.
+4. Estimate the unit of work for every candidate: trigger, likely inputs, human decision or review, action taken, and outputs. Mark each as `estimated`.
+5. Continue through scoring without asking for confirmation when the user's instruction is clearly "estimate and rank." Treat candidate confirmation as an open question at the end.
+
 ### Phase 1: Inventory the workflows
 Ask the user to list the recurring workflows in their business: the repeatable things that happen on a schedule or trigger. Prompt with examples (invoice intake, quote approval, lead triage, reporting, onboarding, compliance checks, customer replies). Let users who already have a list paste the whole list at once; then normalize it, confirm the candidates, and fill gaps. If they do not have a list, gather one workflow at a time. Aim for 4-10 candidates. For each, get a one-line description and roughly how often it runs.
 
-If the user chose estimate-assisted mode or lacks workflow frequencies, infer a candidate list from their business model and scale proxies. For example, customer count can imply support, onboarding, account management, billing, renewal, and reporting workflows; lead or revenue volume can imply sales intake, quoting, invoicing, fulfillment, and collections workflows; employee count can imply HR, scheduling, approvals, and internal reporting workflows. Confirm the inferred candidates before scoring them.
+If the user chose estimate-assisted mode or lacks workflow frequencies, infer a candidate list from their business model and scale proxies. For example, customer count can imply support, onboarding, account management, billing, renewal, and reporting workflows; lead or revenue volume can imply sales intake, quoting, invoicing, fulfillment, and collections workflows; employee count can imply HR, scheduling, approvals, and internal reporting workflows. Confirm the inferred candidates before scoring them unless the user explicitly asked you to estimate and rank from sparse company context. In that case, state the inferred candidates and continue.
 
 ### Phase 2: Define the unit of work
 For each candidate worth pursuing, pin down the unit of work: the start trigger, the inputs, the human decision or judgment, the action taken, and the finish state. If the user cannot describe a clean unit, that workflow is probably not ready; note it and move on.
+
+In sparse company mode, estimate the unit of work instead of dropping the candidate. Use the format `estimated trigger -> estimated inputs -> estimated decision/review -> estimated outputs`. Missing measured inputs should create a baseline gate, not an empty workflow.
 
 ### Phase 3: Scan for missing automation levers
 For each workflow, work through the levers in `reference/levers.md`. You are looking for where leverage is sitting unused. The strongest signal is **repeated human judgment, scoring, extraction, drafting, or routing** done by hand. Also flag: data being copied between systems, no baseline measurement, no safe way to test a change, and scarce human time being rationed.
@@ -61,7 +73,7 @@ Score each candidate 1-5 on the four dimensions in `reference/method.md` (Time s
 If a score uses estimated inputs, mark the reason with `estimated` in your notes and include the assumption in the artifact. Use ranges when useful, then choose the conservative midpoint for scoring. If the score would change materially under a different assumption, list that as an open question.
 
 ### Phase 5: Deliver the artifact
-Produce the ranked table, system sketch, and static HTML report using `reference/output-template.md`. Carry the one-line automation thesis you wrote for each workflow in Phase 3 into the artifact so every row's reasoning is visible. State the top-ranked workflow, the single recommended first build, and the recommended sequence. If the recommended first build differs from rank #1, explain the gap plainly: "#1 = highest overall value; recommended first build = best first proof." Include the first move (foundation step, shadow-mode pilot, or build), what controls are needed before anything writes to a real system, and note any paid-search or ads-optimization fit. End with the open questions a human would need to resolve.
+Produce the ranked table, system sketch, and static HTML report using `reference/output-template.md`. Carry the one-line automation thesis you wrote for each workflow in Phase 3 into the artifact so every row's reasoning is visible. Also carry the estimated unit of work, inputs, and outputs for each candidate when the user asked you to infer them. State the top-ranked workflow, the single recommended first build, and the recommended sequence. If the recommended first build differs from rank #1, explain the gap plainly: "#1 = highest overall value; recommended first build = best first proof." Include the first move (foundation step, shadow-mode pilot, or build), what controls are needed before anything writes to a real system, and note any paid-search or ads-optimization fit. End with the open questions a human would need to resolve.
 
 ## How to behave
 
