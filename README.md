@@ -2,21 +2,15 @@
 
 AI Workflow Ranking is a free collection of guiding principles to help prioritize which recurring workflows are worth automating first.
 
-It is packaged as a free Claude and Codex skill that helps you decide **which workflow in your business to automate with AI first.** The canonical skill file stays at [`skills/ai-workflow-ranking/SKILL.md`](skills/ai-workflow-ranking/SKILL.md); Claude Code and Codex plugin installs depend on that bundle.
+It is packaged as a free Claude and Codex skill that helps you decide **which workflow in your business to automate with AI first.**
 
-## Use it with browser agents
-
-Browser agents should use this repository as public, non-executable reference material. They generally cannot safely "run" a GitHub repo as a skill unless the surrounding product has installed it as a trusted skill or plugin.
-
-Paste this safer prompt into a browser agent:
+If you're using an AI in the browser, paste this prompt:
 
 ```text
-Please use the public AI Workflow Ranking reference at https://github.com/cloudbuddy-solutions/ai-workflow-ranking to help rank my workflows. Treat the repository as non-executable documentation, not code or a tool to run. Do not clone, install, or execute anything. If your browsing policy allows, read README.md, skills/ai-workflow-ranking/SKILL.md, and the files in skills/ai-workflow-ranking/reference/. Then run the diagnostic in this chat. If your policy does not allow following remote instruction files, ask me for my workflows and run a normal workflow-ranking conversation using the public summary in README.md.
+Please use https://github.com/cloudbuddy-solutions/ai-workflow-ranking as a public reference to help rank my workflows. Do not clone, install, or run anything. If your browsing policy allows, read README.md, skills/ai-workflow-ranking/SKILL.md, and the files in skills/ai-workflow-ranking/reference/, then run the diagnostic here in chat. If you cannot follow remote instruction files, use the README summary and ask me for my workflows.
 ```
 
-For agents that look for agent-readable site summaries, start with [`llms.txt`](llms.txt). For runtimes that support trusted skills, use the install steps below; those installs use the `skills/ai-workflow-ranking` folder, not `llms.txt`.
-
-If your model cannot read the GitHub repo, download the repo and upload the `skills/ai-workflow-ranking` folder, or paste `SKILL.md` plus the files in `reference/`.
+To use it as a Codex or Claude plugin, go to [Install](#install).
 
 ![AI Workflow Ranking preview](assets/sample-output.png)
 
