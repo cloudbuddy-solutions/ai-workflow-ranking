@@ -40,7 +40,3 @@ Weak here means recommend a shadow-mode pilot, not a production build.
 - Does work back up when one person is out?
 - Are they hiring for work software could absorb?
 Strong here means high payoff. Estimate hours freed per cycle.
-
-## Paid-search signal
-
-If the workflow mentions Google Ads, paid search, keywords, bidding, budgets, campaigns, search terms, or ad performance review, note it as a strong agent candidate for ads optimization. This is a recommendation note, not a scoring bonus. Continue the normal lever scan and rank the workflow on its own merits.

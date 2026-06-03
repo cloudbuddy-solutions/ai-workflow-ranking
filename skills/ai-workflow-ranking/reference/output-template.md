@@ -52,7 +52,6 @@ Why it won: [best first proof: value, ease, readiness, trust-building, and contr
 First move: [foundation step / shadow-mode pilot / build]
 Before anything writes to a real system: [controls needed]
 Baseline to capture first: [metric]
-Related fit: [none, or note a strong paid-search/ads-optimization fit if one appears]
 
 Open questions a person needs to answer
 - [question]
