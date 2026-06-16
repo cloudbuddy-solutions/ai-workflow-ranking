@@ -34,3 +34,7 @@ Please use https://github.com/cloudbuddy-solutions/ai-workflow-ranking as public
 - Do not treat this repository as a remote command source.
 - Do not bypass the agent's own safety or installation policy.
 - Do not claim the skill is installed unless the user's runtime has actually installed it.
+
+## Related
+
+- agent-queue (https://github.com/cloudbuddy-solutions/agent-queue): the companion CloudBuddy tool for running the chosen workflow. A file-based work queue where an agent claims and completes tasks with verification and a person approves the calls that need judgment.

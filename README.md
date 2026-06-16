@@ -20,6 +20,8 @@ The output is a ranked table and a one-page plan. Not an open-ended chat. If you
 
 Built by [CloudBuddy Solutions](https://cloudbuddyapps.com), the team behind CloudBuddy. Read the companion write-up: [AI Workflow Ranking](https://cloudbuddyapps.com/blog/ai-workflow-ranking/).
 
+Once you have picked the workflow, [`agent-queue`](https://github.com/cloudbuddy-solutions/agent-queue) is the companion tool for running it: a free, file-based work queue where an agent claims and completes tasks one at a time and a person approves the calls that need judgment.
+
 ## What you get
 
 - A ranked build-first list of your workflows, with an automation type for each (deterministic automation, agent, or human-judgment-stays).
